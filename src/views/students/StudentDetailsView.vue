@@ -23,7 +23,7 @@ export default {
   methods: {
     async fetchStudentsData() {
       try {
-        const response = await axios('http://localhost:5173/db.json');
+        const response = await axios.get('db.json');
         this.students = response.data;
       } catch (error) {
         console.error(error);
