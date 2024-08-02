@@ -5,7 +5,7 @@ export default {
   name: 'StudentsViewOapi',
   data() {
     return {
-      students: []            // empty to begin with then length when go through data
+      students: [],        // empty to begin with then length when go through data
     }
   },
   mounted() {
@@ -16,7 +16,7 @@ export default {
     async fetchStudentsData() {
       try {
         const response = await axios.get('db.json');
-        this.students = response.data;
+        this.students = response.data
       } catch (error) {
         console.error(error);
       }

@@ -24,7 +24,8 @@ export default {
     async fetchStudentsData() {
       try {
         const response = await axios.get('db.json');
-        this.students = response.data;
+        const data = JSON.parse(response.data);
+        this.students = (response.data);
       } catch (error) {
         console.error(error);
       }
@@ -61,8 +62,7 @@ export default {
 
             <div class=""
                  v-for="student in students"
-                 :key="student.id"
-            >
+                 :key="student.id">
 
               <h1 class="display-6 text-primary my-lg-5 mt-4">{{ student.name }}</h1>
               <p class="visually-hidden">The student id is {{ id }}</p>
