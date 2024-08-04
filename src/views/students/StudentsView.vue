@@ -1,8 +1,7 @@
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
 import axios from 'axios';
 export default {
-  name: 'StudentsViewOapi',
+  name: 'StudentsView',
   data() {
     return {
       students: [],        // empty to begin with then length when go through data
@@ -38,7 +37,24 @@ export default {
 
   <body class="bg-altlight pt-5">
 
-  <HelloWorld msg="DWWM" />
+  <section class="sticky-top">
+
+    <div class="card text-center bg-info mx-auto shadow border-0" style="max-width: 300px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="../../assets/images/team-min.jpg" class="img-fluid rounded-1" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body text-altmyflamboyant">
+            <h5 class="card-title">Great People</h5>
+            <p class="h5 card-text">To Work With</p>
+            <p class="card-text"><small class="text-body-secondary">Indeed!</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
   <!--     Student Card-->
   <section class="">
@@ -51,9 +67,11 @@ export default {
              v-for="student in students"
              :key="student.id">
 
-          <RouterLink class="fw-bold text-decoration-none" :to="{ name: 'StudentDetails', params: { id: student.id } }">
+            <!--      Next: to add other info on another page like cv
+            <RouterLink class="fw-bold text-decoration-none" :to="{ name: 'StudentDetails', params: { id: student.id } }">
+            </RouterLink>-->
             <h2 class="ms-2 lead fw-semibold text-altmypurpleblue">{{ student.name }}</h2>
-          </RouterLink>
+
 
           <p class="ms-2 lead text-secondary">{{ student.email }}</p>
           <span v-if="student.status === 'active'" class="ms-2 lead text-info">

@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import NotFoundView from '../views/NotFoundView.vue'
+
 import StudentsView from '../views/students/StudentsView.vue'
-import StudentDetailsView from '../views/students/StudentDetailsView.vue'
 import ReadPostView from '../views/posts/ReadPostView.vue'
+import NotFoundView from '../views/NotFoundView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,12 +27,6 @@ const router = createRouter({
       component: StudentsView
     },
     {
-      path: '/students/:id',
-      name: 'StudentDetails',
-      component: StudentDetailsView,
-      props: true                       // We can accept any route parameters as props: Vue will attach that parameter as a prop to the component we're linking to
-    },
-    {
       path: '/readpost',
       name: 'ReadPost',
       component: ReadPostView
@@ -42,9 +36,9 @@ const router = createRouter({
       path: '/dwwm-students',
       redirect: '/students',
     },
-    // catchall 404
+    // catchall 404: Will catch any others routes that does not match these above
     {
-      path: '/:catchAll(.*)',           // Will catch any others routes that does not match these above
+      path: '/:catchAll(.*)',
       name: 'NotFound',
       component: NotFoundView
     }

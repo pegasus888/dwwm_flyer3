@@ -9,12 +9,10 @@
 
       <figure class="text-center">
         <blockquote class="blockquote">
-          <div>
-            <a href="https://daily.dev/" target="_blank" class="h2 text-altmysaddlebrown lead text-decoration-none">
+          <div class="h2 text-altmysaddlebrown lead text-decoration-none">
               <h1 class="h2 text-altmysaddlebrown lead">We know how hard it is to be a developer.</h1>
               <h2 class="text-altmysaddlebrown lead"> It doesn’t have to be.</h2>
               <h3 class="h2 text-altmysaddlebrown lead">Learn, Collaborate, and Grow Together!</h3>
-            </a>
           </div>
         </blockquote>
         <figcaption class="blockquote-footer mt-2 mb-4 text-success opacity-25">
@@ -66,7 +64,7 @@
           <figure class="text-center">
             <blockquote class="blockquote">
               <div>
-                <h1 ><a href="https://www.uarts.edu/makegoodart" target="_blank" class="h2 text-altmydarkfuschia lead mx-auto text-decoration-none"> Gaiman addressed the Class of 2012 at the 134th Commencement of University of the Arts.</a></h1>
+                <h1 class="h2 text-altmydarkfuschia lead mx-auto text-decoration-none"> Gaiman addressed the Class of 2012 at the 134th Commencement of University of the Arts.</h1>
               </div>
             </blockquote>
             <figcaption class="blockquote-footer mt-2 mb-4 text-success opacity-25">
