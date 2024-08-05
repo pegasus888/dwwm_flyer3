@@ -16,8 +16,8 @@ defineProps({
 
 <template>
 
-  <body class="bg-altlight pt-5 pb-5">
-  <section class="bg-altlight mt-5 ms-5 me-5 p-5 rounded">
+  <body class="pb-5">
+  <section class="bg-altligh ms-5 me-5 p-5 rounded">
   <header>
     <div class="container-fluid text-center ">
       <h1 class="display-5 text-primary">{{ title }}</h1>
@@ -39,3 +39,10 @@ defineProps({
 
 </template>
 
+
+<style>
+body {
+  background: #f2ebfa;
+  margin: 0;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
 
-  <body class="bg-altlight pt-5 pb-5">
+  <body class="pt-5 pb-5">
   <h1 class="display-5 text-primary text-center my-lg-5">Make Good Art</h1>
 
   <section class="bg-success-subtle bg-opacity-10 mt-5 ms-5 me-5 p-5 rounded">
@@ -108,5 +108,9 @@
   </body>
 </template>
 
-<script setup lang="ts">
-</script>
+<style>
+body {
+  background: #f2ebfa;
+  margin: 0;
+}
+</style>

@@ -28,16 +28,14 @@ export default {
       this.$router.push( { name: 'ReadPost' } )
     }
   }
-
 }
-
 </script>
 
 
 
 <template>
 
-  <body class="bg-altlight pt-5">
+  <body class="pt-5">
 
   <section class="sticky-top">
 
@@ -111,3 +109,10 @@ export default {
   </body>
 
 </template>
+
+<style>
+body {
+  background: #f2ebfa;
+  margin: 0;
+}
+</style>

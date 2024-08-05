@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <body class="bg-altlight pt-5 pb-5">
+  <body class="pt-5 pb-5">
   <div class="col-12 my-5 mx-auto">
     <h1 class="display-4 alert-warning text-primary text-center">404</h1>
     <h1 class="display-4 alert-warning text-primary text-center my-5">Page not found</h1>
@@ -50,3 +50,10 @@ export default {
   <!--       /Footer-->
   </body>
 </template>
+
+<style>
+body {
+  background: #f2ebfa;
+  margin: 0;
+}
+</style>

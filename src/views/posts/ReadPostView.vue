@@ -6,7 +6,7 @@ export default {
 
 <template>
 
-  <body class="bg-altlight pt-5">
+  <body class="pt-5">
   <div class="mx-auto col-md-10">
     <h1 class="display-4 text-primary text-center mb-5 mt-4">Do You Really Need a Framework?</h1>
 
@@ -82,3 +82,10 @@ export default {
 
   </body>
 </template>
+
+<style>
+body {
+  background: #f2ebfa;
+  margin: 0;
+}
+</style>
