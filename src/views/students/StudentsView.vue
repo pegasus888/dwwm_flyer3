@@ -72,7 +72,7 @@ export default {
 
           <br>
 
-          <a v-bind:href="student.githublink" class="ms-4 text-altmydarkfuschia fst-italic"> Here's my Github </a>
+          <a v-bind:href="student.githublink" target="_blank" class="ms-4 text-altmydarkfuschia fst-italic"> Here's my Github </a>
         </div>
       </div>
 

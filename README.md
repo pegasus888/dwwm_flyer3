@@ -1,2 +1,16 @@
-# dwwm_flyer
-Afpa "Fil Rouge" Project
+Customize configuration
+
+See Vite Configuration Reference.
+Project Setup
+
+npm install
+
+Compile and Hot-Reload for Development
+
+npm run dev
+
+Compile and Minify for Production
+
+npm run build
+
+
