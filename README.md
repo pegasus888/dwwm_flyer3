@@ -1,16 +1,17 @@
-Customize configuration
+# Customize configuration
 
-See Vite Configuration Reference.
-Project Setup
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-npm install
+# Project Setup
 
-Compile and Hot-Reload for Development
+`npm install`
 
-npm run dev
+## Compile and Hot-Reload for Development
 
-Compile and Minify for Production
+`npm run dev`
 
-npm run build
+## Compile and Minify for Production
+
+`npm run build`
 
 
