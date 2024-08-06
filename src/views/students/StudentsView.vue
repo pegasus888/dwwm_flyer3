@@ -1,9 +1,11 @@
 <script>
 import axios from 'axios';
 import Footer from "@/components/Footer.vue";
+import Stickytop from "@/components/Stickytop.vue";
+
 export default {
   name: 'StudentsView',
-  components: {Footer},
+  components: { Stickytop, Footer},
   data() {
     return {
       students: [],        // empty to begin with then length when go through data
@@ -37,24 +39,7 @@ export default {
 
   <body class="pt-5">
 
-  <section class="sticky-top">
-
-    <div class="card text-center bg-info mx-auto shadow border-0" style="max-width: 300px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../../assets/images/team-min.jpg" class="img-fluid rounded-1" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body text-altmyflamboyant">
-            <h5 class="card-title">Great People</h5>
-            <p class="h5 card-text">To Work With</p>
-            <p class="card-text"><small class="text-body-secondary">Indeed!</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
+  <Stickytop />
 
   <!--     Student Card-->
   <section class="">
@@ -67,10 +52,10 @@ export default {
              v-for="student in students"
              :key="student.id">
 
-            <!--      Next: to add other info on another page like cv
-            <RouterLink class="fw-bold text-decoration-none" :to="{ name: 'StudentDetails', params: { id: student.id } }">
-            </RouterLink>-->
-            <h2 class="ms-2 lead fw-semibold text-altmypurpleblue">{{ student.name }}</h2>
+          <!--      Next: to add other info on another page like cv
+          <RouterLink class="fw-bold text-decoration-none" :to="{ name: 'StudentDetails', params: { id: student.id } }">
+          </RouterLink>-->
+          <h2 class="ms-2 lead fw-semibold text-altmypurpleblue">{{ student.name }}</h2>
 
 
           <p class="ms-2 lead text-secondary">{{ student.email }}</p>
@@ -94,15 +79,12 @@ export default {
 
       <div class=""
            v-else>
-
         <h2 class="h4 lead text-altmylightblueviolet fst-italic text-center my-lg-5">Loading Students...</h2>
-
       </div>
 
     </div>
   </section>
   <!--     /Student Card-->
-
 
   <Footer />
 
